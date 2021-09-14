@@ -1,0 +1,18 @@
+<div class="container">
+  <div *ngIf='!userId' class="aler alert-danger">
+    <p class='text-center'>Can Not Find This Id</p>
+  </div>
+
+
+
+
+  <div class="content" *ngIf='userId'>
+    <input type="text" class="form-control" placeholder="Task Title" [(ngModel)]='task.title'>
+    <textarea class="form-control" placeholder="Task Descrition" [(ngModel)]='task.description'></textarea>
+    <div class="btn text-center">
+      <button class="btn btn-primary mx-3" (click)="saveTask()">Save</button>
+      <button class="btn btn-danger" (click)="delete()">Delete</button>
+      <a routerLink='' class='btn btn-danger mx-3'>Cancel</a>
+    </div>
+  </div>
+</div>

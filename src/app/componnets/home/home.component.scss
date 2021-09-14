@@ -1,0 +1,22 @@
+.container {
+  .parag {
+    margin-top: 20px;
+    p {
+      padding: 15px 12px;
+      border-radius: 10px;
+      color: #824b0fa8;
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+  .list {
+    .list-group {
+      li {
+        .btn {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
